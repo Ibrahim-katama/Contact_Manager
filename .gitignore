@@ -1,26 +1,20 @@
-# Python
+# Python Caches & Bytecode
 __pycache__/
 *.py[cod]
 *$py.class
 
-# Virtual environments
+# Virtual Environments
 venv/
 .venv/
 env/
 
-# IDE
+# IDE & Editor Configuration
 .idea/
 .vscode/
 
-# Environment variables
-.env
-
-# Logs
-*.log
-
-# OS files
+# OS System Clutter
 .DS_Store
 Thumbs.db
 
-# Contact data
-contact.csvg
+# Project Specific Data
+data/contact.csv

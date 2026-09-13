@@ -1,46 +1,53 @@
 # Contact Manager
 
-A clean, console-based Python application for managing personal contacts efficiently using CSV storage. Features robust input validation, duplicate prevention, full CRUD (Create, Read, Update, Delete) functionality, and two-step verification to protect user data.
+A simple console-based Python application for managing personal contacts efficiently. 
 
 ---
 
-##  Features
+## Features
 
-- **Add Contact**:
-  - Collects First Name, Middle Name (optional), and Last Name.
-  - Validates 10-digit mobile numbers and email formatting[cite: 1].
-  - Checks for duplicate records (by full name, phone number, or email) before saving[cite: 1].
-
-- View Contact:
-  - Displays an indexed list of all stored contacts by full name[cite: 1].
-  - Select any contact index to view complete details (Full Name, Phone Number, Email)[cite: 1].
-
-- Edit Contact:
-  - Modify names, phone numbers, or email addresses of any existing contact[cite: 1].
-  - Enforces duplicate validation during edits to maintain data integrity[cite: 1].
-
-- Delete Contact:
-  - Displays an indexed list of contacts for easy selection[cite: 1].
-  - Features a **two-step confirmation prompt** to prevent accidental deletion[cite: 1].
-
-- Persistent CSV Storage:
-  - Automatically reads from, appends to, and updates data stored in a local `.csv` file[cite: 1].
+* **Add Contact:** Collects names, validates 10-digit mobile numbers and emails, and checks for duplicates before saving.
+* **View Contacts:** Displays an alphabetically sorted list of all stored contacts with selectable indexes for full details.
+* **Edit Contact:** Modifies names, phone numbers, or email addresses with built-in duplicate validation to maintain data integrity.
+* **Delete Contact:** Displays an indexed list for easy selection and features a two-step confirmation prompt to prevent accidental deletion.
+* **Persistent CSV Storage:** Automatically initializes, reads from, and updates data stored in a local `.csv` file.
 
 ---
 
-##  Tech Stack & Requirements
+## Project Structure
 
-- **Language**: Python 3.x[cite: 1]
-- **Standard Libraries**: `csv`, `re` (built-in)
-- **Data Persistence**: CSV File (`contacts.csv`)[cite: 1]
+```text
+contact_manager/
+│
+├── data/
+│   └── contact.csv
+├── src/
+│   ├── __init__.py
+│   ├── models.py        
+│   ├── storage.py       
+│   └── manager.py       
+│
+├── main.py              
+├── .gitignore
+└── README.md
+```
+## Tech Stack & Setup
 
+* **Language**: Python 3.x
+
+* **Standard Libraries**: csv, re, os
 ---
 
-## Getting Started
+## Execution Steps:
 
-### Prerequisites
-Make sure Python 3 is installed on your computer. You can check your version in terminal/command prompt:
-```bash
-python --version
-# or
-python3 --version
+* Clone the repository to your local machine.
+
+* Navigate to the root project directory (contact_manager/).
+
+* Run the application via the main orchestrator script using the command
+
+``` bash
+  Bash 
+  
+  python main.py
+```
